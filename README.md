@@ -1,38 +1,13 @@
-This folder is for the creation of scripts and tools for stutter detection.
+# ML_Stutter_Detection 👋
+This is a code sample of the stutter detection I developed at a previous company. Because of the success of the model, as well as the nature of the company, one can request to see the rest of the code. 💬
 
-Below is a short summary. For a much more detailed explanation of the project, check out the Confluence within these links:
+In the code sample are some of the data pre-processing functions I used on the data, to prep it for modelling and analysis.
 
-Github link - https://github.amd.com/GPU-Solutions/bloodhound_soln/tree/master/infrastructure/Stutter_Detection
-Network share - \\amd.com\tor\sse_solutions\Bloodhound\Stutter_detection
-Confluence Page - https://confluence.amd.com/display/SSET/Machine+Learning+Stutter+Detection
+Here are some of the final results:
 
-Many of the files are one-time pre-reqs or useful tools not crucial to the future operation of stutter detection.
+![image](https://user-images.githubusercontent.com/57512498/212816636-e66ddb0d-bfdc-4594-a205-82757b5f9710.png)
 
-Key files include:
-preprocessing.py, preprocessing_functions.py, main.py, predict.py
+![image](https://user-images.githubusercontent.com/57512498/212816301-29c5b1fd-8274-4fd4-b3b6-c6837f3c52eb.png)
 
-As well, the majority of the training data is not included in the git repository. One can find
-this in the network share. 
+![image](https://user-images.githubusercontent.com/57512498/212816466-dd8232a6-6598-4421-9ad8-aaa24c838e51.png)
 
-To run locally, 
-- Run pip install -r requirements.txt to install the proper dependencies.
-- The workflow is as follows:
-    - organize the correct directories
-    - preprocessing of the data in preprocessing.py. preprocessing_functions.py contains all these functions and is also tested in test_preprocessing_functions.
-    - this will create .ob files from pickle. We upload this Google Colab link here:
-    - we can then download the .h5 model from there
-    - then we use optimizing_local.py to test the model stats
-    - finally, in main.py, it can be used on real systems
-
-
-Current Directory
-StutterDetection
-- Models (contains the .h5)
-- Old/Other
-- Pickles (contains the .ob and scaler)
-- Results (contains preliminary results on the data and model statistics including visuals)
-- StutterData (contains stutter and nonstutter data)
-rest of python files
-
-On a test system:
-- need: main.py, predict.py, preprocessing_functions.py, PresentMon, model10current.h5, scaler.ob, requirements.txt(pip install -r requirements.txt), 
