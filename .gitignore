@@ -1,0 +1,12 @@
+/StutterData
+/converted
+*.exe
+*.ob
+*.json
+/.vscode
+/Pickles
+/Models
+/Results
+/Old_or_unneeded
+*.pdf
+*.pptx

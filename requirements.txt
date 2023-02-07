@@ -1,0 +1,8 @@
+pandas
+matplotlib
+tensorflow #2.6.2
+keras #2.6
+numpy
+sklearn
+seaborn
+#tensorflow-cpu #2.6.2
