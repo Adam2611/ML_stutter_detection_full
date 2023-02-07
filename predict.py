@@ -3,7 +3,7 @@
 
 import numpy as np
 from keras import backend as K
-import preprocessing_functions as func
+import preprocessing.preprocessing_functions as func
 import pickle
 
 def rules(frames, spike, freq):
